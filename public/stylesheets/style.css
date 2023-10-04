@@ -1,0 +1,34 @@
+/* Default Utilities */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+
+}
+.side-bar{
+  float: left;
+  margin-left:15px;
+  padding-top:15px ;
+  
+}
+.contents{
+  margin-top: 30px;
+}
+.contents li{
+  list-style-type: none;
+  margin: 20px 5px;
+}
+.contents li a:hover{
+  color: #0091ca;
+
+}
+

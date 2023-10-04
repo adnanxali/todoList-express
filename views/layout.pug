@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+  
+    aside(class="side-bar")
+      h1 Manage Task
+      div(class="contents")
+        ul 
+          li 
+            a(href="/tasklist") Home 
+          li 
+            a(href="/create") Create Tasks 
+          li 
+            a(href="/update") Update Tasks 
+          li 
+            a(href="/delete") Delete Task
+    
+    div(class="")
+    block content
