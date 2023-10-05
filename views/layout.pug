@@ -2,7 +2,9 @@ doctype html
 html
   head
     title= title
+    block stylecont
     link(rel='stylesheet', href='/stylesheets/style.css')
+    
   body
   
     aside(class="side-bar")
@@ -17,6 +19,8 @@ html
             a(href="/update") Update Tasks 
           li 
             a(href="/delete") Delete Task
+  
+    script(src="/javascripts/homepage.js") 
     
-    div(class="")
+   
     block content

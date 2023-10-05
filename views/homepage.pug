@@ -1,0 +1,20 @@
+extends layout
+append stylecont
+    link(rel="stylesheet", href="stylesheets/homepage.css")
+    
+
+block content
+  
+    div(class="task-list")
+        h1=title 
+        p(id="description") All your tasks are present here 
+
+        each task in task_list
+            li(class="task") 
+                a(href=task.url class="task-link") #{task.title}
+                input(type="checkbox" class="task-done" checked=task.is_complete)
+                p= `Due Date: ${task.due_date_ff}`  
+                
+            
+        else 
+            li There are no task

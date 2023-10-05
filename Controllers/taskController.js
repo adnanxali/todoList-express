@@ -2,7 +2,11 @@ const Task=require('../models/tasks');
 const asyncHandler=require('express-async-handler');
 
 exports.task_list_get=asyncHandler(async function(req,res,next){
-    
+    const allTask=await Task.find({},"title due_date is_complete").exec();
+    res.render("homepage",{
+        title:"To Do List",
+        task_list:allTask
+    })
 });
 exports.task_list_post=asyncHandler(async function(req,res,next){
     res.send("Not Implemented");

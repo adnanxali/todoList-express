@@ -1,0 +1,33 @@
+.task-list{
+    padding: 50px;
+    line-height: 30px;
+    overflow: hidden;
+    
+    margin: auto;
+    margin-top: 20px;
+    max-width: 75%;
+}
+.task-list h1{
+    margin-bottom: 30px;
+}
+.task-list #description{
+    font-weight: bold;
+    font-size: larger;
+}
+.task-list .task{
+    margin: 20px 0;
+}
+.task-list .task a{
+    color: black;
+    font-size: 20px;
+    
+}
+.task-list .task a:hover{
+    color: grey;
+    font-size: 20px;
+    
+}
+.task-list .task input{
+    float: right;
+    margin: 10px 30%;
+}
