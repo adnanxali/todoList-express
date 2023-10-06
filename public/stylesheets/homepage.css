@@ -31,3 +31,7 @@
     float: right;
     margin: 10px 30%;
 }
+.strike-thr{
+    text-decoration: line-through;
+}
+

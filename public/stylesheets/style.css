@@ -21,6 +21,29 @@ li{
 .strike-thr{
   text-decoration:line-through;
 }
+.btn{
+  background-color: #35A4FB;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  color:#fff;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #1097fe;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  color:#fff;
+  cursor: pointer;
+}
+.vis-hid{
+  visibility: hidden;
+}
 /* Constant Style */
 .side-bar{
   float: left;

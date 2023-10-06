@@ -11,10 +11,21 @@ block content
 
         each task in task_list
             li(class="task") 
-                a(href=task.url class="task-link") #{task.title}
+                if task.is_complete
+                    a(href=task.url class="task-link strike-thr color-grey") #{task.title}
+                else 
+                    a(href=task.url class="task-link") #{task.title}
                 input(type="checkbox" class="task-done" checked=task.is_complete)
                 p= `Due Date: ${task.due_date_ff}`  
                 
             
         else 
             li There are no task
+        
+        
+        
+        a(href="") 
+        button(class="btn remove-btn ") Remove Task
+
+    script(src='/javascripts/homepage.js') 
+        
