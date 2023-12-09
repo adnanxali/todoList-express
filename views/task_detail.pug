@@ -1,0 +1,21 @@
+extends layout
+append stylecont
+    link(rel='stylesheet', href='/stylesheets/task_detail.css')
+block content
+    div(class="task-detail")
+        h1 Task: #{task.title} 
+
+        h3 Description:
+        p(class="task-des") #{task.description} 
+
+        p(class="due-date") Due Date: #{task.due_date_ff}
+
+        if(!task.is_complete)
+            p(class="task-check") Incomplete Task
+            a(href="#")
+                button(class="btn") Mark as Compelete
+
+        else 
+            p(class="task-check") This Task is Completed
+            a(href="")
+                button(class="btn") Mark as Incompelete

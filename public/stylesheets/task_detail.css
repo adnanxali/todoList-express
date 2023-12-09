@@ -1,0 +1,27 @@
+.task-detail{
+    padding: 5rem;
+    margin: 0 10rem;
+}
+.task-detail h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.task-detail h3{
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.task-detail .task-des{
+    display: inline-block;
+    
+    font-size: 20px;
+    margin: 0 1rem;
+} 
+.task-detail .due-date{
+    font-size: 20px;
+    margin-top:1rem;
+}
+.task-detail .task-check{
+    margin-top: 10%;
+    font-size: 18px;
+}
